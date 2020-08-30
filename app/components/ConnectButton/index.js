@@ -14,6 +14,9 @@ const Button = styled.button`
   width: 180px;
   margin: 10px;
   padding: 5px;
+  &:focus {
+    outline: 0;
+  }
   background-color: transparent;
   border-radius: 50px;
   padding: 10px 24px;

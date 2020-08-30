@@ -121,8 +121,8 @@ module.exports = require('./webpack.base.babel')({
       description: 'Vaults.finance',
       background_color: '#fafafa',
       theme_color: '#b1624d',
-      inject: true,
-      ios: true,
+      inject: false,
+      ios: false,
     }),
 
     new HashedModuleIdsPlugin({

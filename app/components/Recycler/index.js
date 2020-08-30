@@ -94,6 +94,9 @@ const Button = styled.button`
   padding: 10px 24px;
   border: 2px solid rgba(47, 128, 237, 0.7);
   color: rgba(47, 128, 237, 0.7);
+  &:focus {
+    outline: 0;
+  }
 `;
 
 const TableWrapper = styled.div`
