@@ -95,7 +95,7 @@ const Button = styled.button`
   border: 2px solid rgba(47, 128, 237, 0.7);
   color: rgba(47, 128, 237, 0.7);
   &:focus {
-    outline: 0;
+    outline: 0 !important;
   }
 `;
 
@@ -117,7 +117,10 @@ const WarningSmall = styled.div`
   color: rgba(43, 57, 84, 0.5);
 `;
 
-const MAX_UINT256 = new BigNumber(2).pow(256).minus(1);
+const MAX_UINT256 = new BigNumber(2)
+  .pow(256)
+  .minus(1)
+  .toString();
 
 export default function Recycler() {
   const recyclerContractAddress = '0x5F07257145fDd889c6E318F99828E68A449A5c7A';
